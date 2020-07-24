@@ -12,6 +12,8 @@
 </head>
 
 <body>
+
+    <!-- login section -->
     <div id="login-area">
         <h1 class="text-center">Welcome to Pioneer Bank</h1>
         <div class="submit-area">
@@ -22,19 +24,26 @@
             <br>
             <button id="login" class="btn btn-success">Enter</button>
         </div>
+        <!-- form-control class make the input box full size & placeholder create hint inside the input-box -->
     </div>
+
+
+    <!-- 8888888888888888888    This is second page/ transaction area  88888888888888888888-->
+    <!-- this section will hold the final value after taken the value from the user -->
     <div id="transaction-area">
         <div class="row">
             <div class="col-md-4">
                 <div class="deposit status">
                     <h5>Deposit</h5>
                     <h2>$ <span id="currentDeposit">00</span></h2>
+                    <!--we created a span to control the the inner text(amount) of the deposit box so that we manipulate data of that box using javascript-->
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="withdraw status">
                     <h5>Withdraw</h5>
                     <h2>$ <span id="currentWithdraw">00</span></h2>
+                    <!--each box has a different id because there function is different, for withdraw box the id is "currentWithdraw"-->
                 </div>
             </div>
             <div class="col-md-4">
@@ -44,6 +53,11 @@
                 </div>
             </div>
         </div>
+        <!-- 888888888888888888888888888 user input section 8888888888888888888 -->
+        <!-- this section take the input from the user and pass it to the the final count section -->
+        <!-- user has two input , they can "deposit" the amount or can "withdraw" the amount-->
+        <!-- according to the transaction the code will count the total balance -->
+        <!-- so we have to return the value taken from the user.and pass it to the calculating box -->
         <div class="row">
             <div class="col-md-6">
                 <div class="submit-area">
